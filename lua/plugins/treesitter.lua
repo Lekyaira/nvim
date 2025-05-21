@@ -1,0 +1,37 @@
+return {
+	"nvim-treesitter/nvim-treesitter",
+	opts = {
+		ensure_installed = { 
+			"c", 
+			"lua", 
+			"vim", 
+			"vimdoc", 
+			"query", 
+			"markdown", 
+			"markdown_inline",
+			"rust",
+			"bash",
+			"c_sharp",
+			"cmake",
+			"cpp",
+			"css",
+			"csv",
+			"html",
+			"javascript",
+			"json",
+			"nix",
+			"norg",
+			"nu",
+			"python",
+			"scss",
+			"sql",
+			"toml",
+			"yaml",
+		},
+		auto_install = true;
+		highlight = {
+			enable = true,
+			additional_vim_regex_highlighting = false,
+		},
+	},
+}
