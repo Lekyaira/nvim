@@ -49,7 +49,7 @@ return {
       excluded_filetypes = { "prompt", "TelescopePrompt", "noice", "NvimTree" },
       handlers = {
         diagnostic = true,
-        gitsigns = true,
+        gitsigns = false,
         search = true,
         cursor = false,
         handle = true,
