@@ -23,7 +23,7 @@ local function i()
 	}
 	dashboard.section.buttons.val = {
 		dashboard.button("e", "  New file" , ":ene <BAR> startinsert <CR>"),
-		dashboard.button("f", "  Find File", ":FzfLua files<CR>"),
+		dashboard.button("f", "  Find File", function() require("fzf-lua").files() end),
 		dashboard.button(
 			"c", 
 			"  Configure Neovim", 

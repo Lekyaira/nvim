@@ -31,33 +31,12 @@ k.n("k", "<C-d>")
 k.v("j", "<C-u>")
 k.v("k", "<C-d>")
 
--- Barbar
-k.n("<C-s>", "<Cmd>BufferPrevious<CR>")
-k.n("<C-t>", "<Cmd>BufferNext<CR>")
-k.n("<C-S-s>", "<Cmd>BufferMovePrevious<CR>")
-k.n("<C-S-t>", "<Cmd>BufferMoveNext<CR>")
-k.n("<Leader>p", "<Cmd>BufferPin<CR>", { desc = "Pin/Unpin Current Buffer" })
-k.n("<Leader>x", "<Cmd>SmartBdelete<CR>", { desc = "Close Current Buffer" })
-
--- Leap
-k.n("s", "<Plug>(leap)")
-
--- Fzf
-k.n("<Leader>f", [[:FzfLua files<CR>]], { desc = "Fuzzy Find Files" })
-
--- Nvim-Tree
-k.n("<Leader>e", [[:NvimTreeToggle<CR>]], { desc = "File Explorer" })
-
 -- Select all.
-k.n("<leader>a", "ggVG")
+k.n("<leader>a", "ggVG", { desc = "Select All" })
 
--- Centers cursor when moving 1/2 page down.
+-- Centers cursor when moving 1/2 page.
 k.n("<C-d>", "<C-d>zz")
+k.n("<C-u>", "<C-u>zz")
 
 -- Centers cursor when moving to the bottom of the page.
 k.n("G", "Gzz")
-
--- Todo-comments
-k.n("]t", function() require("todo-comments").jump_next() end, { desc = "Next todo comment" })
-k.n("[t", function() require("todo-comments").jump_prev() end, { desc = "Previous todo comment" })
-k.n("<leader>td", [[:TodoQuickFix]], { desc = "Lists all Todos" })
