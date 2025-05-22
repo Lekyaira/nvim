@@ -56,3 +56,8 @@ k.n("<C-d>", "<C-d>zz")
 
 -- Centers cursor when moving to the bottom of the page.
 k.n("G", "Gzz")
+
+-- Todo-comments
+k.n("]t", function() require("todo-comments").jump_next() end, { desc = "Next todo comment" })
+k.n("[t", function() require("todo-comments").jump_prev() end, { desc = "Previous todo comment" })
+k.n("<leader>td", [[:TodoQuickFix]], { desc = "Lists all Todos" })

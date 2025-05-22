@@ -20,6 +20,11 @@ local function kmap(bufnr)
 	k.n("i", api.node.open.edit, opts("Open"))
 	k.n("n", "j", opts "Next")
 	k.n("e", "k", opts "Previous")
+	k.n("r", api.fs.rename, opts("Rename"))
+	k.n("a", api.fs.create, opts("Add"))
+	k.n("d", api.fs.remove, opts("Delete"))
+	k.n("x", api.fs.cut, opts("Cut"))
+	k.n("p", api.fs.paste, opts("Paste"))
 end
 
 return {
