@@ -33,7 +33,7 @@ local function i()
 				require("fzf-lua").files({ cwd = config_path }) 
 			end
 		),
-      dashboard.button("q", "󰅚  Quit NVIM" , ":qa<CR>"),
+      dashboard.button("q", "󰅚  Quit Neovim" , ":qa<CR>"),
 	}
 	local handle = io.popen("fortune")
 	local fortune = handle:read("*a")

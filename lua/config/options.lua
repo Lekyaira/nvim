@@ -20,6 +20,7 @@ local options = {
    smartcase = true, -- Use case in search when explicitly searched
    conceallevel = 2, -- Markdown conceal
    concealcursor = "nc",
+	wrap = false,
 }
 
 for k, v in pairs(options) do
