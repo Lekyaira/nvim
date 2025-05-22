@@ -20,4 +20,12 @@ return {
 		no_name_title = "Empty",
 	},
 	init = i, -- Let Lazy handle setup
+	keys = {
+		{ "<C-s>", [[:BufferPrevious<CR>]] },
+		{ "<C-t>", [[:BufferNext<CR>]] },
+		{ "<C-S-s>", [[:BufferMovePrevious<CR>]] },
+		{ "<C-S-t>", [[:BufferMoveNext<CR>]] },
+		{ "<leader>p", [[:BufferPin<CR>]], desc = "Pin/Unpin Current Buffer" },
+		{ "<leader>x", [[:SmartBdelete<CR>]], desc = "Close Current Buffer" },
+	},
 }

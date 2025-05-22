@@ -40,5 +40,8 @@ return {
 				quit_on_open = true,
 			},
 		},
-	}
+	},
+	keys = {
+		{ "<leader>e", [[:NvimTreeToggle<CR>]], desc = "File Explorer" }
+	},
 }

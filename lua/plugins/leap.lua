@@ -15,4 +15,7 @@ end
 return {
 	"ggandor/leap.nvim",
 	init = i,
+	keys = {
+		{ "s", "<Plug>(leap)", desc = "Leap to..." },
+	},
 }

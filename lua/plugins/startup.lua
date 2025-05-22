@@ -22,9 +22,18 @@ local function i()
 [[	⠀⠀⠀⠀⠈⢧ 																												 ]],
 	}
 	dashboard.section.buttons.val = {
-		dashboard.button( "e", "  New file" , ":ene <BAR> startinsert <CR>"),
-		dashboard.button( "f", "  Find File", ":FzfLua files<CR>"),
-      dashboard.button( "q", "󰅚  Quit NVIM" , ":qa<CR>"),
+		dashboard.button("e", "  New file" , ":ene <BAR> startinsert <CR>"),
+		dashboard.button("f", "  Find File", ":FzfLua files<CR>"),
+		dashboard.button(
+			"c", 
+			"  Configure Neovim", 
+			function() 
+				local config_path = vim.fn.stdpath("config")
+				vim.cmd("cd " .. config_path)
+				require("fzf-lua").files({ cwd = config_path }) 
+			end
+		),
+      dashboard.button("q", "󰅚  Quit NVIM" , ":qa<CR>"),
 	}
 	local handle = io.popen("fortune")
 	local fortune = handle:read("*a")
