@@ -1,6 +1,6 @@
 return {
 	lua = {
-		lsp = "lua_ls",
+		lsp = { "lua_ls", {} },
 		mason = "lua_ls",
 		treesitter = true,
 		format = "stylua",
@@ -9,7 +9,7 @@ return {
 	},
 
 	python = {
-		lsp = "pyright",
+		lsp = { "pyright", {} },
 		mason = "pyright",
 		treesitter = true,
 		format = "black",
@@ -18,7 +18,7 @@ return {
 	},
 
 	javascript = {
-		lsp = "tsserver",
+		lsp = { "tsserver", {} },
 		mason = "eslint",
 		treesitter = true,
 		format = "prettier",
@@ -27,7 +27,7 @@ return {
 	},
 
 	typescript = {
-		lsp = "tsserver",
+		lsp = { "tsserver", {} },
 		mason = false, -- already handled by javascript
 		treesitter = true,
 		format = "prettier",
@@ -36,7 +36,7 @@ return {
 	},
 
 	json = {
-		lsp = "jsonls",
+		lsp = { "jsonls", {} },
 		mason = "jsonls",
 		treesitter = true,
 		format = "prettier",
@@ -45,7 +45,7 @@ return {
 	},
 
 	yaml = {
-		lsp = "yamlls",
+		lsp = { "yamlls", {} },
 		mason = "yamlls",
 		treesitter = true,
 		format = "prettier",
@@ -54,7 +54,7 @@ return {
 	},
 
 	markdown = {
-		lsp = "marksman",
+		lsp = { "marksman", {} },
 		mason = "marksman",
 		treesitter = true,
 		format = "prettier",
@@ -63,7 +63,7 @@ return {
 	},
 
 	html = {
-		lsp = "html",
+		lsp = { "html", {} },
 		mason = "html",
 		treesitter = true,
 		format = "prettier",
@@ -72,7 +72,7 @@ return {
 	},
 
 	css = {
-		lsp = "cssls",
+		lsp = { "cssls", {} },
 		mason = "cssls",
 		treesitter = true,
 		format = "prettier",
@@ -81,7 +81,7 @@ return {
 	},
 
 	scss = {
-		lsp = "cssls",
+		lsp = { "cssls", {} },
 		mason = false,
 		treesitter = true,
 		format = "prettier",
@@ -90,7 +90,7 @@ return {
 	},
 
 	toml = {
-		lsp = "taplo",
+		lsp = { "taplo", {} },
 		mason = "taplo",
 		treesitter = true,
 		format = false,
@@ -99,7 +99,7 @@ return {
 	},
 
 	bash = {
-		lsp = "bashls",
+		lsp = { "bashls", {} },
 		mason = "bashls",
 		treesitter = true,
 		format = false,
@@ -108,7 +108,7 @@ return {
 	},
 
 	c = {
-		lsp = "clangd",
+		lsp = { "clangd", {} },
 		mason = "clangd",
 		treesitter = true,
 		format = false,
@@ -117,7 +117,7 @@ return {
 	},
 
 	cpp = {
-		lsp = "clangd",
+		lsp = { "clangd", {} },
 		mason = false,
 		treesitter = true,
 		format = false,
@@ -135,7 +135,7 @@ return {
 	},
 
 	nu = {
-		lsp = "nu_ls",
+		lsp = { "nu_ls", {} },
 		mason = false,
 		treesitter = true,
 		format = false,

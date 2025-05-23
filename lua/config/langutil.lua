@@ -20,10 +20,14 @@ function M.get(fields)
 				seen[value] = true
 				table.insert(results, value)
 			elseif type(value) == "table" then
-				for _, item in ipairs(value) do
-					if type(item) == "string" and not seen[item] then
-						seen[item] = true
-						table.insert(results, item)
+				if field == "lsp" then
+					table.insert(results, value)
+				else
+					for _, item in ipairs(value) do
+						if type(item) == "string" and not seen[item] then
+							seen[item] = true
+							table.insert(results, item)
+						end
 					end
 				end
 			elseif type(value) == "boolean" and value == true and not seen[name] then

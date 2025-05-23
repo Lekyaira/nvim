@@ -40,3 +40,6 @@ k.n("<C-u>", "<C-u>zz")
 
 -- Centers cursor when moving to the bottom of the page.
 k.n("G", "Gzz")
+
+-- Close current buffer
+k.n("<leader>x", [[:bdelete]], { desc = "Close Current Buffer" })
